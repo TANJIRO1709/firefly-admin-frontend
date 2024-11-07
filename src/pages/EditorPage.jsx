@@ -16,8 +16,6 @@ import { GLTFExporter } from "three/addons/exporters/GLTFExporter.js";
 const io = new WebIO({ credentials: "include" })
   .registerExtensions(KHRONOS_EXTENSIONS)
   .registerDependencies({
-    "draco3d.encoder": new DracoEncoderModule(),
-    "draco3d.decoder": new DracoDecoderModule(),
   });
 
 const EditorPage = () => {
