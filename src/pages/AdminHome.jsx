@@ -10,7 +10,7 @@ const AdminHome = () => {
 
   useEffect(() => {
     console.log("USER",user);
-    fetchData();
+   // fetchData();
   }, []);
 
   const [active, setActive] = useState("dashboard");
