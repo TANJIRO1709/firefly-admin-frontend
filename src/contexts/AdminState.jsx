@@ -37,7 +37,7 @@ const AdminState = (props) => {
 
   // Login
   const Login = async (values) => {
-    const response = await fetch(host + "/login", {
+    const response = await fetch( "/login", {
       method: "POST",
       credentials: "include",
       headers: {
@@ -58,7 +58,7 @@ const AdminState = (props) => {
 
   // Signup
   const Signin = async (values) => {
-    const response = await fetch(host + "/signup", {
+    const response = await fetch( "/signup", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -78,7 +78,7 @@ const AdminState = (props) => {
 
   // Logout
   const Logout = async () => {
-    const response = await fetch(host + "/logout", {
+    const response = await fetch( "/logout", {
       method: "GET",
       credentials: "include",
       headers: {
@@ -97,7 +97,7 @@ const AdminState = (props) => {
 
   // getCategories
   const getCategories = async () => {
-    const response = await fetch(host + "/category", {
+    const response = await fetch("/category", {
       method: "GET",
       credentials: "include",
       headers: {
@@ -114,7 +114,7 @@ const AdminState = (props) => {
 
   //get design category
   const getDesignCategories = async () => {
-    const response = await fetch(host + "/designcategory", {
+    const response = await fetch("/designcategory", {
       method: "GET",
       credentials: "include",
       headers: {
@@ -151,7 +151,7 @@ const AdminState = (props) => {
 
   // patchCategory(categoryId)
   const patchCategory = async (categoryId, values) => {
-    const response = await fetch(`${host}/category/${categoryId}`, {
+    const response = await fetch(`/category/${categoryId}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
@@ -177,7 +177,7 @@ const AdminState = (props) => {
 
   // delCategory(categoryId)
   const delCategory = async (categoryId) => {
-    const response = await fetch(`${host}/category/${categoryId}`, {
+    const response = await fetch(`/category/${categoryId}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
@@ -197,7 +197,7 @@ const AdminState = (props) => {
 
   // getSubCategories
   const getSubCategories = async (categoryId) => {
-    const response = await fetch(host + "/getsubcategory", {
+    const response = await fetch( "/getsubcategory", {
       method: "POST",
       credentials: "include",
       headers: {
@@ -216,7 +216,7 @@ const AdminState = (props) => {
 
   // postSubCategory
   const postSubCategory = async (values) => {
-    const response = await fetch(host + "/subcategory", {
+    const response = await fetch( "/subcategory", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -236,7 +236,7 @@ const AdminState = (props) => {
 
   // patchSubCategory(SubCategoryId)
   const patchSubCategory = async (subCategoryId, values) => {
-    const response = await fetch(`${host}/subcategory/${subCategoryId}`, {
+    const response = await fetch(`/subcategory/${subCategoryId}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
@@ -261,7 +261,7 @@ const AdminState = (props) => {
 
   // delSubCategory(SubCategoryId)
   const delSubCategory = async (subCategoryId) => {
-    const response = await fetch(`${host}/subcategory/${subCategoryId}`, {
+    const response = await fetch(`/subcategory/${subCategoryId}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
@@ -281,7 +281,7 @@ const AdminState = (props) => {
 
   // getProducts
   const getProducts = async (subCategoryId) => {
-    const response = await fetch(host + "/getproduct", {
+    const response = await fetch( "/getproduct", {
       method: "POST",
       credentials: "include",
       headers: {
@@ -300,7 +300,7 @@ const AdminState = (props) => {
 
   // postProduct
   const postProduct = async (values) => {
-    const response = await fetch(host + "/product", {
+    const response = await fetch( "/product", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -321,7 +321,7 @@ const AdminState = (props) => {
 
   // patchProduct(productId)
   const patchProduct = async (productId, values) => {
-    const response = await fetch(`${host}/product/${productId}`, {
+    const response = await fetch(`/product/${productId}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
@@ -346,7 +346,7 @@ const AdminState = (props) => {
 
   // delProduct(productId)
   const delProduct = async (productId) => {
-    const response = await fetch(`${host}/product/${productId}`, {
+    const response = await fetch(`/product/${productId}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
@@ -366,7 +366,7 @@ const AdminState = (props) => {
 
   // postModel
   const postModel = async (values) => {
-    const response = await fetch(host + "/model", {
+    const response = await fetch( "/model", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -387,7 +387,7 @@ const AdminState = (props) => {
 
   // getProductModels
   const getProductModels = async (categoryId) => {
-    const response = await fetch(`${host}/productmodels`, {
+    const response = await fetch(`/productmodels`, {
       method: "GET",
       credentials: "include",
       headers: {
@@ -405,7 +405,7 @@ const AdminState = (props) => {
 
   // getModels
   const getModels = async (categoryId) => {
-    const response = await fetch(`${host}/models/${categoryId}`, {
+    const response = await fetch(`/models/${categoryId}`, {
       method: "GET",
       credentials: "include",
       headers: {
@@ -423,7 +423,7 @@ const AdminState = (props) => {
 
   // patchModel
   const patchModel = async (modelId, values) => {
-    const response = await fetch(`${host}/model/${modelId}`, {
+    const response = await fetch(`/model/${modelId}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
@@ -448,7 +448,7 @@ const AdminState = (props) => {
 
   // delModel
   const delModel = async (modelId) => {
-    const response = await fetch(`${host}/model/${modelId}`, {
+    const response = await fetch(`/model/${modelId}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
@@ -477,7 +477,7 @@ const AdminState = (props) => {
     formData.append("publicId", publicId);
     formData.append("modelId", modelId);
 
-    const response = await fetch(host + "/savemodel", {
+    const response = await fetch( "/savemodel", {
       method: "POST",
       credentials: "include",
       body: formData,
