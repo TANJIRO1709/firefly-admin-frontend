@@ -132,7 +132,7 @@ const AdminState = (props) => {
   // postCategory
   const postCategory = async (values) => {
     console.log("AdminState", JSON.stringify(values));
-    const response = await fetch(host + "/category", {
+    const response = await fetch("/category", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
