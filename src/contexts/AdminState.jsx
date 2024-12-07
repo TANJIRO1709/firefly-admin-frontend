@@ -17,7 +17,7 @@ const AdminState = (props) => {
 
   // getAdminData
   const fetchData = async () => {
-    const response = await fetch(host + "/login", {
+    const response = await fetch( "/login", {
       method: "GET",
       credentials: "include",
       headers: {
