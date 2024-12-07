@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { extractPublicId } from "cloudinary-build-url";
 
 const AdminState = (props) => {
-  const host = import.meta.env.VITE_HOST;
+  const host = "";
   const navigate = useNavigate();
   const [user, setUser] = useState(null);
   const [categories, setCategories] = useState([]);
